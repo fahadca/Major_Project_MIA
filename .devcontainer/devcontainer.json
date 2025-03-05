@@ -1,0 +1,22 @@
+{
+    "name": "Blind Assistance App Dev Container",
+    "dockerFile": "Dockerfile",
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+      "dart-code.flutter",
+      "ms-vscode.android-studio",
+      "redhat.java",
+      "vscjava.vscode-java-pack",
+      "firebase.firebase-tools"
+    ],
+    "postCreateCommand": [
+      "flutter doctor",
+      "flutter pub get"
+    ],
+    "runArgs": [
+      "--privileged"
+    ]
+  }
+  
